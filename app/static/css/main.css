@@ -1337,7 +1337,7 @@ aside .thumb figure {
 	max-width: 300px;
 }
 .navbar-brand img {
-	max-height: 40px;
+	max-height: 60px;
 }
 .navbar-header .navbar-brand {
 	display: none;
@@ -5273,6 +5273,9 @@ input:focus:-ms-input-placeholder {
 	.yamm .dropdown.yamm-fullwidth .dropdown-menu {
 	    width: 100%;
 	}
+	.navbar-brand img {
+		max-height: 40px;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -6093,13 +6096,13 @@ a.changecolor {
 
 .navbar .navbar-brand img {
 	-skrollr-animation-name: shrink-logo;
-	height: 40px;
+	height: 60px;
 }
 
 @-skrollr-keyframes shrink-header {
 	40 {
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 		-webkit-box-shadow: 0 10px 10px rgba(0,0,0,0);
 		   -moz-box-shadow: 0 10px 10px rgba(0,0,0,0.0);
 				box-shadow: 0 10px 10px rgba(0,0,0,0);
@@ -6116,10 +6119,10 @@ a.changecolor {
 
 @-skrollr-keyframes shrink-logo {
 	40 {
-		max-height: 40px;
+		max-height: 60px;
 	}
 
 	300 {
-		max-height: 20px;
+		max-height: 40px;
 	}
 }

@@ -53,17 +53,17 @@
 					<div class="container">
 						
 						<ul class="info pull-left">
-							<li><a href="#"><i class="icon-mail-1 contact"></i> info@reen.com</a></li>
-							<li><i class="icon-mobile contact"></i> +00 (123) 456 78 90</li>
+							<li><a href="#"><i class="icon-mail-1 contact"></i> temp@needmail.net</a></li>
+							<li><i class="icon-mobile contact"></i> (800) 555-TEST</li>
 						</ul><!-- /.info -->
 						
 						<ul class="social pull-right">
 							<li><a href="#"><i class="icon-s-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-s-gplus"></i></a></li>
+							{# <li><a href="#"><i class="icon-s-gplus"></i></a></li> #}
 							<li><a href="#"><i class="icon-s-twitter"></i></a></li>
 							<li><a href="#"><i class="icon-s-pinterest"></i></a></li>
-							<li><a href="#"><i class="icon-s-behance"></i></a></li>
-							<li><a href="#"><i class="icon-s-dribbble"></i></a></li>
+							{# <li><a href="#"><i class="icon-s-behance"></i></a></li> #}
+							{# <li><a href="#"><i class="icon-s-dribbble"></i></a></li> #}
 						</ul><!-- /.social -->
 						
 						<!-- ============================================================= LOGO MOBILE ============================================================= -->
@@ -91,20 +91,24 @@
 							<!-- ============================================================= MAIN NAVIGATION ============================================================= -->
 							
 							<ul class="nav navbar-nav">
-								
+
+								<li>
+									<a href="{{ url_for('index') }}">Home</a>
+								</li>
+
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle js-activated">Home</a>
+									<a href="#" class="dropdown-toggle js-activated">About</a>
 									
 									<ul class="dropdown-menu">
-										<li><a href="index.html">Product Style</a></li>
-										<li><a href="index2.html">Service Style</a></li>
-										<li><a href="index3.html">Agency Style</a></li>
-										<li><a href="index4.html">Portfolio Style</a></li>
-										<li><a href="index5.html">Showcase Style</a></li>
+										<li><a href="{{ url_for('about') }}">Our Team</a></li>
+										<li><a href="{{ url_for('services') }}">Our Services</a></li>
 									</ul><!-- /.dropdown-menu -->
 								</li><!-- /.dropdown -->
 								
-								<li class="dropdown">
+								<li>
+									<a href="{{ url_for('blog') }}">Blog</a>
+								</li>
+								{# <li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">Portfolio</a>
 									
 									<ul class="dropdown-menu">
@@ -120,9 +124,11 @@
 										<li><a href="portfolio-post5.html">Post with Video</a></li>
 										<li><a href="portfolio-post6.html">Post with Audio</a></li>
 									</ul><!-- /.dropdown-menu -->
-								</li><!-- /.dropdown -->
-								
-								<li class="dropdown">
+								</li> #}<!-- /.dropdown -->
+								<li>
+									<a href="{{ url_for('portfolio') }}">Portfolio</a>
+								</li>
+								{# <li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">Blog</a>
 									
 									<ul class="dropdown-menu">
@@ -137,9 +143,9 @@
 										<li><a href="blog-post2.html">Post Sidebar left</a></li>
 										<li><a href="blog-post3.html">Post without Sidebar</a></li>
 									</ul><!-- /.dropdown-menu -->
-								</li><!-- /.dropdown -->
+								</li> #}<!-- /.dropdown -->
 								
-								<li class="dropdown">
+								{# <li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">Pages</a>
 									
 									<ul class="dropdown-menu">
@@ -165,9 +171,9 @@
 										<li><a href="pricing2.html">Pricing II</a></li>
 										<li><a href="sidenav.html">Side Navigation</a></li>
 									</ul><!-- /.dropdown-menu -->
-								</li><!-- /.dropdown -->
+								</li> #}<!-- /.dropdown -->
 								
-								<li class="dropdown">
+								{# <li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">Features</a>
 									
 									<ul class="dropdown-menu">
@@ -215,19 +221,19 @@
 										</li><!-- /.dropdown-submenu -->
 										
 									</ul><!-- /.dropdown-menu -->
-								</li><!-- /.dropdown -->
+								</li> #}<!-- /.dropdown -->
 								
 								<!-- ============================================================= MEGA MENU ============================================================= -->
 								
 								<li class="dropdown yamm-fullwidth">
-									<a href="#" class="dropdown-toggle js-activated">Mega Menu</a>
+									<a href="#" class="dropdown-toggle js-activated">Latest</a>
 									
 									<ul class="dropdown-menu yamm-dropdown-menu">
 										<li>
 											<div class="yamm-content row">
 											
 												<div class="col-sm-3 inner">
-													<h4>Focus on</h4>
+													<h4>Spotlight</h4>
 													<figure>
 														<div class="icon-overlay icn-link">
 															<a href="portfolio-post.html"><img src="{{ url_for('static', filename='images/art/work01.jpg') }}" alt=""></a>
@@ -240,7 +246,7 @@
 												</div><!-- /.col -->
 												
 												<div class="col-sm-3 inner">
-													<h4>Special Pages</h4>
+													<h4>Industry News</h4>
 													
 													<ul class="circled">
 														<li><a href="portfolio2.html">3 Columns Details Grid Portfolio</a></li>
@@ -258,7 +264,7 @@
 												</div><!-- /.col -->
 												
 												<div class="col-sm-3 inner">
-													<h4>Latest Works</h4>
+													<h4>Latest Work</h4>
 													
 													<div class="row thumbs gap-xs">
 														
@@ -305,7 +311,7 @@
 													<h4>About Us</h4>
 													<p>Voluptat ibusaped molorporro consequ idustibus. Reressi morum ut dolessiti tem nihicid ernatum, coria volore non pro officat ut autem accaborem conet. Omnis peribus qui dolent praeperrum coria.</p>
 													<p>Equam conesti occum dolorest, quae venderes quistius, comnitatur sae dinam nonseculpa cum fugit is verciam.</p>
-													<a href="about.html" class="btn">Read More</a>
+													<a href="{{ url_for('about') }}" class="btn">Read More</a>
 												</div><!-- /.col -->
 												
 											</div><!-- /.yamm-content -->
@@ -315,7 +321,7 @@
 								
 								<!-- ============================================================= MEGA MENU : END ============================================================= -->
 								
-								<li class="dropdown">
+								{# <li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">Contact</a>
 									
 									<ul class="dropdown-menu">
@@ -323,8 +329,10 @@
 										<li><a href="contact2.html">Contact II</a></li>
 										<li><a href="contact3.html">Contact III</a></li>
 									</ul><!-- /.dropdown-menu -->
-								</li><!-- /.dropdown -->
-								
+								</li> #}<!-- /.dropdown -->
+								<li>
+									<a href="{{ url_for('contact') }}">Contact</a>
+								</li>
 								<li class="dropdown pull-right searchbox">
 									<a href="#" class="dropdown-toggle js-activated"><i class="icon-search"></i></a>
 											  
@@ -365,9 +373,9 @@
 					
 					<div class="col-md-3 col-sm-6 inner">
 						<h4>Who we are</h4>
-						<a href="index.html"><img class="logo img-intext" src="{{ url_for('static', filename='images/logo-white.svg') }}" alt=""></a>
+						<a href="{{ url_for('index') }}"><img class="logo img-intext" src="{{ url_for('static', filename='images/logo-white.svg') }}" alt=""></a>
 						<p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
-						<a href="about.html" class="txt-btn">More about us</a>
+						<a href="{{ url_for('about') }}" class="txt-btn">More about us</a>
 					</div><!-- /.col -->
 					
 					<div class="col-md-3 col-sm-6 inner">
@@ -430,12 +438,12 @@
 				<div class="container inner">
 					<p class="pull-left">© 2016 REEN. All rights reserved.</p>
 					<ul class="footer-menu pull-right">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="services.html">Services</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="{{ url_for('index') }}">Home</a></li>
+						<li><a href="{{ url_for('portfolio') }}">Portfolio</a></li>
+						<li><a href="{{ url_for('blog') }}">Blog</a></li>
+						<li><a href="{{ url_for('about') }}">About</a></li>
+						<li><a href="{{ url_for('services') }}">Services</a></li>
+						<li><a href="{{ url_for('contact') }}">Contact</a></li>
 					</ul><!-- .footer-menu -->
 				</div><!-- .container -->
 			</div><!-- .footer-bottom -->

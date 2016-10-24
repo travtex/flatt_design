@@ -14,6 +14,10 @@ def index():
 def about():
 	return render_template('about.html', title='About Us')
 
+@app.route('/services')
+def services():
+	return render_template('services.html', title='Our Services')
+
 @app.route('/blog')
 def blog():
 	return render_template('blog.html', title='Blog')
