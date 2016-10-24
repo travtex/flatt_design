@@ -1,18 +1,33 @@
 from flask import render_template
 from app import app
 
+# Public Routes
 @app.route('/')
 @app.route('/index')
 @app.route('/home')
 def index():
 	""" Index or home view. """
-	user = {'nickname': 'Mr. Trav'} # Temp fake user
-	return render_template('index.html', title='Home', user=user)
+	return render_template('index.html', title='Home')
 
-@app.route('/index/<string:name>')
-def name(name):
-	user = {'nickname': name}
-	return render_template('index.html', title='Home', user=user)
+@app.route('/about')
+@app.route('/team')
+def about():
+	return render_template('about.html', title='About Us')
+
+@app.route('/blog')
+def blog():
+	return render_template('blog.html', title='Blog')
+
+@app.route('/portfolio')
+@app.route('/work')
+def portfolio():
+	return render_template('portfolio.html', title='Our Work')
+
+@app.route('/contact')
+def contact():
+	return render_template('contact.html', title='Contact Us')
+
+# Administrative Routes
 
 @app.route('/admin')
 def admin():

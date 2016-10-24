@@ -20,7 +20,7 @@
 		
 		<!-- Customizable CSS -->
 		<link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" data-skrollr-stylesheet>
-		<link href="{{ url_for('static', filename='css/green.css') }}" rel="stylesheet" title="Color">
+		<link href="{{ url_for('static', filename='css/orange.css') }}" rel="stylesheet" title="Color">
 		<link href="{{ url_for('static', filename='css/owl.carousel.css') }}" rel="stylesheet">
 		<link href="{{ url_for('static', filename='css/owl.transitions.css') }}" rel="stylesheet">
 		<link href="{{ url_for('static', filename='css/animate.min.css') }}" rel="stylesheet">
@@ -463,22 +463,7 @@
 		<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 
 		<!-- For demo purposes – can be removed on production -->
-		<link href="{{ url_for('static', filename='css/green.css') }}" rel="alternate stylesheet" title="Green color">
-		<link href="{{ url_for('static', filename='css/blue.css') }}" rel="alternate stylesheet" title="Blue color">
-		<link href="{{ url_for('static', filename='css/red.css') }}" rel="alternate stylesheet" title="Red color">
-		<link href="{{ url_for('static', filename='css/pink.css') }}" rel="alternate stylesheet" title="Pink color">
-		<link href="{{ url_for('static', filename='css/purple.css') }}" rel="alternate stylesheet" title="Purple color">
-		<link href="{{ url_for('static', filename='css/orange.css') }}" rel="alternate stylesheet" title="Orange color">
-		<link href="{{ url_for('static', filename='css/navy.css') }}" rel="alternate stylesheet" title="Navy color">
-		<link href="{{ url_for('static', filename='css/gray.css') }}" rel="alternate stylesheet" title="Gray color">
 		
-		<script src="{{ url_for('static', filename='js/switchstylesheet.js') }}"></script>
-		
-		<script>
-			$(document).ready(function(){ 
-				$(".changecolor").switchstylesheet( { seperator:"color"} );
-			});
-		</script>
 		<!-- For demo purposes – can be removed on production : End -->
 		
 		{% block jsextra %}{% endblock %}
