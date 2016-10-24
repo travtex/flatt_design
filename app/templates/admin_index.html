@@ -1,0 +1,12 @@
+<html>
+	<head>
+		{% if title %}
+			<title>{{ title }} - Flatt Design</title>
+		{% else %}
+			<title>Administration</title>
+		{% endif %}
+	</head>
+	<body>
+		<h1>Hello, {{ user.nickname }}! You're an <em>ADMIN</em> and that's super awesome.</h1>
+	</body>
+</html>
