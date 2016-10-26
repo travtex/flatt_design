@@ -1,2 +1,10 @@
+# Dev Settings
+DEBUG = True
 WTF_CSRF_ENABLED = True
-SECRET_KEY = 'guess-me' # String for CSRF
+SECRET_KEY = ''
+
+DB_NAME = ''
+DB_USER = ''
+DB_PASS = ''
+
+SQLALCHEMY_DATABASE_URI = ''
