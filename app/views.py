@@ -7,29 +7,29 @@ from app import app
 @app.route('/home')
 def index():
 	""" Index or home view. """
-	return render_template('index.html', title='Home')
+	return render_template('public/index.html', title='Home')
 
 @app.route('/about')
 @app.route('/team')
 def about():
-	return render_template('about.html', title='About Us')
+	return render_template('public/about.html', title='About Us')
 
 @app.route('/services')
 def services():
-	return render_template('services.html', title='Our Services')
+	return render_template('public/services.html', title='Our Services')
 
 @app.route('/blog')
 def blog():
-	return render_template('blog.html', title='Blog')
+	return render_template('public/blog.html', title='Blog')
 
 @app.route('/portfolio')
 @app.route('/work')
 def portfolio():
-	return render_template('portfolio.html', title='Our Work')
+	return render_template('public/portfolio.html', title='Our Work')
 
 @app.route('/contact')
 def contact():
-	return render_template('contact.html', title='Contact Us')
+	return render_template('public/contact.html', title='Contact Us')
 
 # Administrative Routes
 
@@ -37,7 +37,7 @@ def contact():
 def admin():
 	""" Administrative interface """
 	user = {'nickname': 'Mr. Trav'}
-	return render_template('admin_index.html', title='Admin Dashboard', user=user)
+	return render_template('admin/index.html', title='Admin Dashboard', user=user)
 
 # Error Handling Pages
 @app.errorhandler(404)
