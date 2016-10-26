@@ -3,6 +3,7 @@ DEBUG = True
 WTF_CSRF_ENABLED = True
 SECRET_KEY = ''
 
+DB_HOST = ''
 DB_NAME = ''
 DB_USER = ''
 DB_PASS = ''
