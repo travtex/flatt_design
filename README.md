@@ -1,1 +1,2 @@
-Don't forget to set up config.py from config.py.tpl.  This is important.
+Don't forget to set up config.py files from config.py.tpl.  This is important.
+

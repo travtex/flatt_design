@@ -70,7 +70,7 @@
 						
 						<!-- ============================================================= LOGO MOBILE ============================================================= -->
 						
-						<a class="navbar-brand" href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/logo.svg') }}" class="logo" alt=""></a>
+						<a class="navbar-brand" href="{{ url_for('public.index') }}"><img src="{{ url_for('static', filename='images/logo.svg') }}" class="logo" alt=""></a>
 						
 						<!-- ============================================================= LOGO MOBILE : END ============================================================= -->
 						
@@ -85,7 +85,7 @@
 							
 							<!-- ============================================================= LOGO ============================================================= -->
 							
-							<a class="navbar-brand" href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/logo.svg') }}" class="logo" alt=""></a>
+							<a class="navbar-brand" href="{{ url_for('public.index') }}"><img src="{{ url_for('static', filename='images/logo.svg') }}" class="logo" alt=""></a>
 							
 							<!-- ============================================================= LOGO : END ============================================================= -->
 							
@@ -95,20 +95,20 @@
 							<ul class="nav navbar-nav">
 
 								<li>
-									<a href="{{ url_for('index') }}">Home</a>
+									<a href="{{ url_for('public.index') }}">Home</a>
 								</li>
 
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">About</a>
 									
 									<ul class="dropdown-menu">
-										<li><a href="{{ url_for('services') }}">Our Services</a></li>
-										<li><a href="{{ url_for('about') }}">Our Team</a></li>
+										<li><a href="{{ url_for('public.services') }}">Our Services</a></li>
+										<li><a href="{{ url_for('public.about') }}">Our Team</a></li>
 									</ul><!-- /.dropdown-menu -->
 								</li><!-- /.dropdown -->
 								
 								<li>
-									<a href="{{ url_for('blog') }}">Blog</a>
+									<a href="{{ url_for('public.blog') }}">Blog</a>
 								</li>
 								{# <li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">Portfolio</a>
@@ -128,7 +128,7 @@
 									</ul><!-- /.dropdown-menu -->
 								</li> #}<!-- /.dropdown -->
 								<li>
-									<a href="{{ url_for('portfolio') }}">Portfolio</a>
+									<a href="{{ url_for('public.portfolio') }}">Portfolio</a>
 								</li>
 								
 								
@@ -220,7 +220,7 @@
 													<h4>About Us</h4>
 													<p>Voluptat ibusaped molorporro consequ idustibus. Reressi morum ut dolessiti tem nihicid ernatum, coria volore non pro officat ut autem accaborem conet. Omnis peribus qui dolent praeperrum coria.</p>
 													<p>Equam conesti occum dolorest, quae venderes quistius, comnitatur sae dinam nonseculpa cum fugit is verciam.</p>
-													<a href="{{ url_for('about') }}" class="btn">Read More</a>
+													<a href="{{ url_for('public.about') }}" class="btn">Read More</a>
 												</div><!-- /.col -->
 												
 											</div><!-- /.yamm-content -->
@@ -240,7 +240,7 @@
 									</ul><!-- /.dropdown-menu -->
 								</li> #}<!-- /.dropdown -->
 								<li>
-									<a href="{{ url_for('contact') }}">Contact</a>
+									<a href="{{ url_for('public.contact') }}">Contact</a>
 								</li>
 								<li class="dropdown pull-right searchbox">
 									<a href="#" class="dropdown-toggle js-activated"><i class="icon-search"></i></a>
@@ -282,9 +282,9 @@
 					
 					<div class="col-md-3 col-sm-6 inner">
 						<h4>Who we are</h4>
-						<a href="{{ url_for('index') }}"><img class="logo img-intext" src="{{ url_for('static', filename='images/logo-white.svg') }}" alt=""></a>
+						<a href="{{ url_for('public.index') }}"><img class="logo img-intext" src="{{ url_for('static', filename='images/logo-white.svg') }}" alt=""></a>
 						<p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
-						<a href="{{ url_for('about') }}" class="txt-btn">More about us</a>
+						<a href="{{ url_for('public.about') }}" class="txt-btn">More about us</a>
 					</div><!-- /.col -->
 					
 					<div class="col-md-3 col-sm-6 inner">
@@ -347,12 +347,12 @@
 				<div class="container inner">
 					<p class="pull-left">© 2016 REEN. All rights reserved.</p>
 					<ul class="footer-menu pull-right">
-						<li><a href="{{ url_for('index') }}">Home</a></li>
-						<li><a href="{{ url_for('portfolio') }}">Portfolio</a></li>
-						<li><a href="{{ url_for('blog') }}">Blog</a></li>
-						<li><a href="{{ url_for('about') }}">About</a></li>
-						<li><a href="{{ url_for('services') }}">Services</a></li>
-						<li><a href="{{ url_for('contact') }}">Contact</a></li>
+						<li><a href="{{ url_for('public.index') }}">Home</a></li>
+						<li><a href="{{ url_for('public.portfolio') }}">Portfolio</a></li>
+						<li><a href="{{ url_for('public.blog') }}">Blog</a></li>
+						<li><a href="{{ url_for('public.about') }}">About</a></li>
+						<li><a href="{{ url_for('public.services') }}">Services</a></li>
+						<li><a href="{{ url_for('public.contact') }}">Contact</a></li>
 					</ul><!-- .footer-menu -->
 				</div><!-- .container -->
 			</div><!-- .footer-bottom -->
