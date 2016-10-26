@@ -1,6 +1,6 @@
 # flatt_design/app/views/public.py
 
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, abort
 
 public = Blueprint('public', __name__)
 
@@ -42,3 +42,5 @@ def contact():
 	return render_template('public/contact.html', title='Contact Us')
 
 # Error Handling Pages
+
+from app import views
