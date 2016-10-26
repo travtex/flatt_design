@@ -4,6 +4,14 @@ from flask import Blueprint, render_template
 
 public = Blueprint('public', __name__)
 
+@public.errorhandler(404)
+def pub_page_not_found(e):
+	return render_template('public/404.html'), 404
+
+@public.errorhandler(500)
+def pub_server_error(e):
+	return render_template('public/500.html'), 500
+
 @public.route('/')
 @public.route('/index')
 @public.route('/home')
@@ -32,3 +40,5 @@ def portfolio():
 @public.route('/contact')
 def contact():
 	return render_template('public/contact.html', title='Contact Us')
+
+# Error Handling Pages

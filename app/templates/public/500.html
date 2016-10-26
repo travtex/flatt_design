@@ -1,16 +1,16 @@
-{% extends "base.html" %}
+{% extends "public/base.html" %}
 
 {% block cssextra %}
 {% endblock %}
 
 {% block content %}
 <main>
-	<section id="image-background-2" class="dark-bg img-bg-soft img-bg" style="background-image: url({{ url_for('static', filename='images/art/image-background02.jpg') }});">
+	<section id="pattern-background-1" class="light-bg img-bg-softer" style="background-image: url({{ url_for('static', filename='images/art/pattern-background01.jpg') }});">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-sm-9 inner center-block text-center">
-						<h1>404</h1>
-						<p>The page you are looking for does not exist.</p>
+						<h1>500</h1>
+						<p>Something went wrong. Please reload the page.</p>
 				</div><!-- /.col -->
 			</div><!-- /.row -->
 		</div><!-- /.container -->
