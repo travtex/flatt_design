@@ -1,0 +1,1 @@
+Don't forget to set up config.py from config.py.tpl.  This is important.
