@@ -10,3 +10,4 @@ mail = Mail(app)
 
 from app import views
 from app import db
+from app import models
