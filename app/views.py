@@ -35,6 +35,7 @@ def contact():
 # Administrative Routes
 
 @app.route('/admin')
+@login_required
 def admin():
 	""" Administrative interface """
 	user = {'nickname': 'Mr. Trav'}
