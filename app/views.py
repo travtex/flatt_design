@@ -1,5 +1,6 @@
 from flask import render_template
 from app import app
+from flask_security import login_required
 
 # Public Routes
 @app.route('/')
@@ -34,6 +35,7 @@ def contact():
 # Administrative Routes
 
 @app.route('/admin')
+@login_required
 def admin():
 	""" Administrative interface """
 	user = {'nickname': 'Mr. Trav'}
